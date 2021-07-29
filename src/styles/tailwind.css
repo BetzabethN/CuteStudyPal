@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: thistle;
+  }
+  
+/* center content horizontally and vertically*/
+.App {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 300px;
+    height: 250 px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 5.9vw;
+}
+
+#timer {
+    font-size: 5vw;
+}
+
+.divider {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+}
