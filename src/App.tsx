@@ -29,7 +29,21 @@ function App() {
         </button>
       </div>
 
+      <div className="divider" />
+
       {/* to do list */}
+      <div className="bg-ldthistle">
+        <div className="bg-ldthistle rounded shadow px-4 py-2" x-data="todo()">
+          <div className="bg-ldthistle title fond-bold text-lg">To Do</div>
+
+          <input type="text" placeholder="Enter Task" className="rounded-sm shadow-sm px-4 py-2 border border-gray-200 w-full mt-4" x-model="todoTitle" x-ref="addTask" onKeyDownCapture={() => {"addTodo()"}} />
+
+          <ul className="todo-list mt-4">
+            
+          </ul>
+
+        </div>
+      </div>
 
     </div>
   );
