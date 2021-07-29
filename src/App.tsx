@@ -1,5 +1,7 @@
 import React from 'react';
+import startButton from './components/startButton';
 import './styles/App.css';
+
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
           Pause
         </button>
         <div className="divider"/>
-        <button className="bg-ldthistle hover:bg-dthistle font-bolf py-1 px-3 rounded-full">
+        <button className="bg-ldthistle hover:bg-dthistle font-bolf py-1 px-3 rounded-full" onClick={() => {window.location.reload() }}>
           Restart
         </button>
       </div>
